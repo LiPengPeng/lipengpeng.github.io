@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="跑车过收费站：上下滑动选路，管理 ETC 通行券，规划三条车道。免费离线街机小游戏。">
+<title>跑车过收费站 / Toll Booth Roadster</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    padding: 32px 20px; background: #0a1226; color: #e8eef2;
+    font: 16px/1.7 -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { width: min(100%, 740px); }
+  .hero {
+    padding: clamp(28px, 7vw, 56px); border: 1px solid #243a53; border-radius: 28px;
+    background: radial-gradient(ellipse at 88% 8%, #253e5a 0, #12233a 42%, #0d192d 100%);
+    box-shadow: 0 28px 80px #0006;
+  }
+  .eyebrow { color: #ffd75c; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { margin: 12px 0 6px; font-size: clamp(30px, 7vw, 48px); line-height: 1.12; }
+  .en-title { margin: 0; color: #9fb2c2; font-size: 19px; }
+  h2 { margin: 32px 0 8px; color: #ffd75c; font-size: 18px; }
+  p { margin: 8px 0; color: #c8d4dd; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .links a {
+    min-height: 48px; display: inline-flex; align-items: center; justify-content: center;
+    padding: 10px 18px; border-radius: 14px; background: #ffd75c; color: #182231;
+    font-weight: 700; text-decoration: none;
+  }
+  .links a.secondary { border: 1px solid #435a70; background: transparent; color: #e8eef2; }
+  footer { padding: 18px 4px; color: #8296a8; font-size: 13px; }
+  footer a { color: #ffd75c; }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" aria-labelledby="title">
+    <p class="eyebrow">A lane-planning arcade game</p>
+    <h1 id="title">跑车过收费站</h1>
+    <p class="en-title">Toll Booth Roadster</p>
+
+    <h2>上下滑动，规划收费路线</h2>
+    <p>沿高速公路驶向一座座收费站。每站会重新排布 ETC、人工、服务区和关闭状态中的三种路线；通行券耗尽后，ETC 车道也无法通行。读牌后上下滑动换道，在高分、稳妥通行与补充通行券之间做决定。</p>
+    <p>ETC 消耗 1 张通行券并得 2 分，人工车道得 1 分，服务区可以补券。关闭车道会撞上栏杆。</p>
+    <p>免费、离线可玩、无需登录，无内购。</p>
+
+    <h2>Swipe to plan your toll route</h2>
+    <p>Drive toward a series of toll plazas. Each one randomly places two route types from ETC express, manual, service stop, and closed. Without an ETC pass, the express lane is unavailable. Read the signs, swipe up or down, and choose between points, a steady passage, or a service stop.</p>
+    <p>ETC spends one pass for 2 points, the manual lane earns 1, and service stops refill a pass. A closed lane ends the run.</p>
+    <p>Free to play offline. No sign-in or in-app purchases.</p>
+
+    <nav class="links" aria-label="App information">
+      <a href="./privacy.html">隐私政策 · Privacy</a>
+      <a class="secondary" href="./support.html">技术支持 · Support</a>
+    </nav>
+  </section>
+  <footer>联系支持：<a href="mailto:wf9.9@qq.com">wf9.9@qq.com</a></footer>
+</main>
+</body>
+</html>
